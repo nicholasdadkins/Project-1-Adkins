@@ -1,3 +1,11 @@
+* {
+    font-family: 'Gothic A1', sans-serif !important;
+  }
+  
+  .cursive {
+    font-family: 'Sacramento', cursive !important;
+  }
+  
 .grid-container {
     display: flex;
     flex-direction: column;
@@ -20,16 +28,5 @@
     }
   }       
        
-           
-       header { width:100%; height: 60px; background: rgb(0,0,0); } 
 
-       section.hero { width:100%; height: 400px; background: rgb(200,200,200);  }
-
-        section.hero .container { width: 940px; height:100%; background: rgb(225,225,225); margin: 0 auto; }
-        
-       section.features { width:940px; height: 450px; background: rgb(150,150,150); margin: 0 auto; } 
-
-       section.organize { width:100%; height: 300px; background: rgb(200,200,200); } 
-
-       footer { width: 100%; height: 60px; background: rgb(200,200,200); }
        
