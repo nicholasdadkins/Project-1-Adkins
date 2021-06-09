@@ -2,31 +2,80 @@
     font-family: 'Gothic A1', sans-serif !important;
   }
   
-  .cursive {
-    font-family: 'Sacramento', cursive !important;
-  }
-  
-.grid-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .iframe-container {
-    height: 300px;
-    margin-bottom: 2%;
-  }
-  
-   @media screen and (min-width:1024px) {
-    .grid-container {
-      flex-direction: row;
-    }
-    
-    .iframe-container {
-      width: 32%;
-    }
-  }       
-       
 
+  
+  .required:after {
+    content:" *";
+    color: red;
+  }
+
+  form div {
+    margin-bottom: 10px;
+  }
+
+  .error {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  label.error {
+    display: inline;
+  }
        
+  .flex-box {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .flex-box #myCarousel{
+    flex: 1 1 50%
+  }
+  
+  iframe {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: #777;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+content {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+
+  padding: 10px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
